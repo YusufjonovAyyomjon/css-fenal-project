@@ -145,13 +145,15 @@ button:active{
 
 .banner .title span,
 .feedback .wrap .title_description span,
-.desinger .mask_box .mask_box_title h1 span{
+.desinger .mask_box .mask_box_title h1 span,
+.populars span{
     position: relative;
 }
 
 .banner .title .sub_line,
 .feedback .wrap .title_description .sub_line,
-.desinger .mask_box .mask_box_title .sub_line{
+.desinger .mask_box .mask_box_title .sub_line,
+.populars .sub_line{
     position: absolute;
     top: 32px;
     right: -7px;
@@ -172,6 +174,11 @@ button:active{
     width: 100%;
     background: rgb(72, 123, 108);
     z-index: 1;
+}
+
+.populars .sub_line{
+    left: 0;
+    width: 100%;
 }
 
 .feedback{
@@ -276,4 +283,81 @@ button:active{
    position: absolute;
    left: 60px;
    top: 74px;
+}
+
+.populars{
+    margin: 100px 0;
+}
+
+.populars  .items .right_btn_clicked{
+    position: absolute;
+    right: 120px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.populars h1{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.populars .items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(192px, 1fr));
+    gap: 60px;
+    grid-auto-flow: row;
+    margin: 70px 0;
+}
+
+.populars .items .item_card{
+    max-width: 192px;
+    min-width: 180px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.populars .items .item_card .item_card_image{
+    width: 100%;
+    height: 192px;
+    border-radius: 24px;
+    background-color: rgb(242, 242, 242);
+    display: grid;
+    place-content: center;
+    position: relative;
+    transition: 0.4s;
+}
+
+.populars .items .item_card .item_card_image:hover{
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.17);
+}
+
+.populars .items .item_card .item_card_image:hover img{
+    transform: scale(1.05);
+    transition: transform 0.4s;
+}
+
+.populars .items .item_card h3{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.populars .items .item_card .item_card_image .sum{
+    position: absolute;
+    bottom: 14px;
+    left: 14px;
+    font-weight: 500;
+    font-size: 12px;
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 14px;
+    background-color: rgb(16, 187, 135);
+    display: grid;
+    place-content: center;
 }
