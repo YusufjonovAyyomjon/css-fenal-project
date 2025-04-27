@@ -518,3 +518,81 @@ button:active {
 footer{
     background-color: rgb(242, 242, 242);
 }
+
+footer .top_footer{
+    padding: 50px 0;
+}
+
+
+footer .top_footer .inside_top{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+}
+
+
+footer .top_footer .inside_bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr;
+    margin: 64px 0 50px 0;
+}
+
+
+
+footer .top_footer .inside_top ul,
+footer .top_footer .inside_bottom ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+}
+
+footer .top_footer .inside_bottom ul:first-child li img {
+    display: none;
+}
+
+
+footer .top_footer .inside_top .box,
+footer .top_footer .inside_bottom .box{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 30px;
+}
+
+
+footer .top_footer .inside_top .box .line,
+footer .top_footer .inside_bottom .box .line{
+    margin-top: 10px;
+}
+
+
+footer .top_footer .inside_top .box .inner_box,
+footer .top_footer .inside_bottom .box .inner_box{
+    display: flex;
+    align-items: start;
+    gap: 40px;
+}
+
+
+footer .top_footer .inside_top ul li a,
+footer .top_footer .inside_bottom ul li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+footer .top_footer .inside_top ul li a:hover,
+footer .top_footer .inside_bottom ul li a:hover{
+    text-decoration: underline;
+    color: #FF2F54;
+}
+
+
+footer .top_footer .inside_top ul :nth-child(4) li:first-child a,
+footer .top_footer .inside_bottom >ul :nth-child(2) li:first-child a{
+    color: rgb(179, 179, 179);
+}
