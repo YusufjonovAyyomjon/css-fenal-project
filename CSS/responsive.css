@@ -38,7 +38,10 @@
     }
 
     .banner .title .sub_line,
-    .feedback .wrap .title_description .sub_line{
+    .feedback .wrap .title_description .sub_line,
+    .desinger .mask_box .mask_box_title .sub_line,
+    .populars .sub_line,
+    .contact .back_call .back_call_item span{
         top: 18px;
         right: 3px;
         width: 100%;
@@ -46,6 +49,10 @@
     
     .feedback .wrap .title_description .sub_line{
         right: 5px;
+    }
+
+    .contact .back_call .back_call_item .sub_line {
+        top: 34px;
     }
     
     .feedback {
@@ -77,7 +84,7 @@
     }
 
     .advantage{
-        margin: 70px 0 100px 0;
+        margin: 70px 0 180px 0;
     }
 
     .advantage .advantage_wrap{
@@ -99,13 +106,35 @@
         line-height: 18px;
     }
 
-    .desinger{
-        background-color: rgb(16, 187, 135);
-    }
-
     .desinger .mask_box{
         width: 100%;
+        height: 100%;
         justify-content: start;
+        border-radius: 0;
+        padding: 0 10px;
+    }
+
+    .desinger .mask_box .mask_box_title{
+        width: 100%;
+        left: 10px;
+        bottom: 40px;
+    }
+
+    
+    .desinger .mask_box .mask_box_title h1{
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .desinger .mask_box .mask_box_title h1 br:first-child{
+        display: none;
+    }
+
+    
+    .desinger .mask_box .mask_box_title p {
+        margin: 28px 0 20px 0;
+        font-size: 12px;
+        line-height: 18px;
     }
 
     .desinger .mask_box > img{
@@ -114,7 +143,7 @@
 
     .desinger .mask_box .window_img{
         left: 0;
-        bottom: 0;
+        top: -100px;
         width: 100%;
     }
 
@@ -123,7 +152,70 @@
     }
     
     
-    .desinger .mask_box .window_img .sub_window_img{
+    .desinger .mask_box .window_img .sub_window_img:first-child{
+        width: 100%;
+    }
+
+    .desinger .mask_box .window_img img:last-child {
+        top: 30px;
+    }
+
+     
+    .populars h1{
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    
+    .populars h1 br{
+        display: none;
+    }
+
+    .populars .items{
+        grid-auto-flow: column;
+        overflow: scroll;
+    }
+
+    .services h2,
+    .category h2{
+        justify-content: space-between;
+    }
+
+    .services .items{
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+    }
+    
+    .services .items .item_card{
+        gap: 10px;
+    }
+
+    
+    .populars .items .item_card h3,
+    .services .items .item_card h3,
+    .services .items .item_card p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .category .category_wrapper{
+        grid-auto-flow: column;
+        overflow-x: scroll;
+        gap: 24px;
+    }
+
+    .contact{
+        background-color: rgb(16, 187, 135);
+    }
+
+    .contact .back_call{
+        flex-direction: column;
+        background-color: none;
+        padding: 0;
+        gap: 32px;
+        margin-bottom: 50px;
+    }
+
+    .contact .back_call.back_call_item{
         width: 100%;
     }
 }

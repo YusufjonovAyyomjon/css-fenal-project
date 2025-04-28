@@ -272,6 +272,7 @@ button:active {
     align-items: start;
 }
 
+
 .desinger .mask_box {
     height: 384px;
     position: relative;
@@ -284,7 +285,7 @@ button:active {
 }
 
 .desinger .mask_box .mask_box_title {
-    width: 350px;
+    width: 370px;
     position: absolute;
     left: 256px;
     display: flex;
@@ -379,7 +380,8 @@ button:active {
 }
 
 
-.populars .items .item_card h3 .services .items .item_card h3 {
+.populars .items .item_card h3,
+.services .items .item_card h3 {
     font-size: 14px;
     font-weight: 600;
     line-height: 20px;
