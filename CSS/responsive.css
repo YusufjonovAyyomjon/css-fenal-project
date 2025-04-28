@@ -64,14 +64,66 @@
     .feedback .wrap .title_description{
         gap: 28px;
     }
+
     .feedback .wrap .title_description h1 {
         font-size: 20px;
         font-weight: 600;
         line-height: 28px;
     }
 
-    .advantage .advantage_wrap .box  p {
+    .feedback .wrap .title_description p {
         font-size: 12px;
         line-height: 18px;
+    }
+
+    .advantage{
+        margin: 70px 0 100px 0;
+    }
+
+    .advantage .advantage_wrap{
+        flex-wrap: wrap;
+    }
+
+    
+    .advantage .advantage_wrap .box{
+        max-width: 150px;
+        font-size: 12px;
+    }
+    
+    .advantage .advantage_wrap .box h3{
+        font-size: 12px;
+    }
+    
+    .advantage .advantage_wrap .box p{
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .desinger{
+        background-color: rgb(16, 187, 135);
+    }
+
+    .desinger .mask_box{
+        width: 100%;
+        justify-content: start;
+    }
+
+    .desinger .mask_box > img{
+        display: none;
+    }
+
+    .desinger .mask_box .window_img{
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .desinger .mask_box .window_img .sub_window_img{
+        width: 100%;
+    }
+    
+    
+    .desinger .mask_box .window_img .sub_window_img{
+        width: 100%;
     }
 }

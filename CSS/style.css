@@ -232,15 +232,20 @@ button:active {
     gap: 44px;
     font-weight: 400;
 }
+.advantage{
+    margin: 100px 0 140px 0;
+}
 
 .advantage .advantage_wrap {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 28px;
 }
 
 .advantage .advantage_wrap .box {
-    width: 192px;
+    max-width: 192px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: start;
